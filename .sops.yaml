@@ -1,0 +1,9 @@
+creation_rules:
+  - path_regex: secrets/.*\.(env|sh|yaml|yml)$
+    encrypted_regex: '^(OS_|OPENSTACK_|SECRET_|PASSWORD|TOKEN|.*)$'
+    pgp: []
+    age: ["age1exampleexampleexampleexampleexampleexampleexampleexample"]
+    kms: []
+    gcp_kms: []
+    azure_kv: []
+

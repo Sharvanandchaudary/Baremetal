@@ -1,0 +1,22 @@
+# Copy this file to openrc.sh and fill in your OpenStack credentials.
+# For security, do NOT commit the filled openrc.sh to source control.
+
+export OS_AUTH_URL="https://keystone.example/v3"
+export OS_USERNAME="myuser"
+export OS_PASSWORD="mypassword"
+export OS_PROJECT_NAME="myproject"
+export OS_USER_DOMAIN_NAME="Default"
+export OS_PROJECT_DOMAIN_NAME="Default"
+export OS_REGION_NAME="RegionOne"
+export OS_INTERFACE="public"
+export OS_IDENTITY_API_VERSION=3
+
+# Optional: application credentials instead of user/password
+# export OS_APPLICATION_CREDENTIAL_ID=""
+# export OS_APPLICATION_CREDENTIAL_SECRET=""
+
+# How to use locally:
+#   source ./openrc.sh
+#   ./baremetal.sh --openrc ./openrc.sh --image ubuntu-22.04 --network provider-net --count 5
+
+
